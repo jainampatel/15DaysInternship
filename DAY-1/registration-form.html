@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="registration-form.css" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <div class="main-form">
+      <h1>Registration</h1>
+      <form id="myform" method="POST" onsubmit="onSubmitHandler()">
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="First Name"
+          required
+        />
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="Last Name"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email Address"
+          required
+        />
+        <input
+          type="password"
+          id="email"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <input
+          type="tel"
+          id="phoneno"
+          name="phoneno"
+          placeholder="Phone No."
+          required
+        />
+        <input type="submit" value="Submit" />
+      </form>
+      <p id="demo"></p>
+    </div>
+    <script>
+      const onSubmitHandler = (e) => {
+        e.preventDefault();
+        const myform = document.getElementById("myform");
+        const fname = document.getElementById("fname");
+        const lname = document.getElementById("lname");
+        const email = document.getElementById("email");
+        const phoneno = document.getElementById("phoneno");
+        const password = document.getElementById("password");
+        const formData = new FormData();
+        formData.append("fname", fname.value);
+        formData.append("lname", lname.value);
+        formData.append("email", email.value);
+        formData.append("phoneno", phoneno.value);
+        formData.append("password", password.value);
+        console.log(formData);
+      };
+    </script>
+  </body>
+</html>

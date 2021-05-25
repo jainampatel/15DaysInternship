@@ -1,0 +1,79 @@
+.main-form {
+  font: 95% Arial, Helvetica, sans-serif;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 16px;
+  background: #f7f7f7;
+}
+.main-form h1 {
+  background: #303030;
+  padding: 20px 0;
+  font-size: 140%;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  margin: -16px -16px 16px -16px;
+}
+.main-form input[type="text"],
+.main-form input[type="date"],
+.main-form input[type="datetime"],
+.main-form input[type="email"],
+.main-form input[type="number"],
+.main-form input[type="search"],
+.main-form input[type="time"],
+.main-form input[type="url"],
+.main-form input[type="password"],
+.main-form input[type="tel"],
+.main-form textarea,
+.main-form select {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 4%;
+  border: 1px solid #ccc;
+  padding: 3%;
+  color: #555;
+  font: 95% Arial, Helvetica, sans-serif;
+}
+.main-form input[type="text"]:focus,
+.main-form input[type="date"]:focus,
+.main-form input[type="datetime"]:focus,
+.main-form input[type="email"]:focus,
+.main-form input[type="number"]:focus,
+.main-form input[type="search"]:focus,
+.main-form input[type="time"]:focus,
+.main-form input[type="password"]:focus,
+.main-form input[type="tel"]:focus,
+.main-form input[type="url"]:focus,
+.main-form textarea:focus,
+.main-form select:focus {
+  box-shadow: 0 0 5px #303030;
+  padding: 3%;
+  border: 1px solid #303030;
+}
+
+.main-form input[type="submit"],
+.main-form input[type="button"] {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  padding: 3%;
+  background: #303030;
+  border-bottom: 2px solid #303030;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  color: #fff;
+}
+.main-form input[type="submit"]:hover,
+.main-form input[type="button"]:hover {
+  background: #303030;
+}
